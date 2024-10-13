@@ -1,0 +1,170 @@
+********************************************************************************
+product = Open Liberty 23.0.0.1 (wlp-1.0.73.cl230120230123-2118)
+wlp.install.dir = /home/ibtissam/Documents/trello/target/liberty/wlp/
+java.home = /usr/lib/jvm/java-11-openjdk-amd64
+java.version = 11.0.17
+java.runtime = OpenJDK Runtime Environment (11.0.17+8-post-Ubuntu-1ubuntu222.04)
+os = Linux (5.19.0-32-generic; amd64) (en_US)
+process = 354368@ibtissam-Sama
+Classpath = /home/ibtissam/Documents/trello/target/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+********************************************************************************
+[3/5/23, 20:11:17:767 WEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server jsf001Server has been launched.
+[3/5/23, 20:11:18:980 WEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.5 seconds
+[3/5/23, 20:11:19:118 WEST] 00000026 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[3/5/23, 20:11:20:242 WEST] 0000001d com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[3/5/23, 20:11:20:891 WEST] 00000034 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application jsf001.
+[3/5/23, 20:11:20:892 WEST] 00000034 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The jsf001 application is using the loose application definition at the /home/ibtissam/Documents/trello/target/liberty/wlp/usr/servers/jsf001Server/apps/jsf001.war.xml location.
+[3/5/23, 20:11:21:798 WEST] 00000034 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[3/5/23, 20:11:21:842 WEST] 00000034 org.jboss.weld.Version                                       I WELD-000900: 4.0.3 (Final)
+[3/5/23, 20:11:22:961 WEST] 00000034 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[3/5/23, 20:11:22:973 WEST] 00000034 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.cdi.JsfArtifactProducerExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[3/5/23, 20:11:23:449 WEST] 00000034 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Hello Servlet.
+[3/5/23, 20:11:23:452 WEST] 00000034 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Hello Servlet has been bound to default_host.
+[3/5/23, 20:11:23:454 WEST] 00000034 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/jsf001/
+[3/5/23, 20:11:23:491 WEST] 00000029 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/jsf001
+[3/5/23, 20:11:23:506 WEST] 00000029 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[3/5/23, 20:11:23:795 WEST] 00000029 org.apache.myfaces.ee.MyFacesContainerInitializer            I Using org.apache.myfaces.ee.MyFacesContainerInitializer
+[3/5/23, 20:11:23:810 WEST] 00000029 org.apache.myfaces.ee.MyFacesContainerInitializer            I Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+[3/5/23, 20:11:23:812 WEST] 00000029 com.ibm.ws.jsf.ee.WASMyFacesContainerInitializer             I Added StartupServletContextListener to the servlet context
+[3/5/23, 20:11:23:841 WEST] 00000029 com.ibm.ws.webcontainer.webapp                               E SRVE0279E: Error occured while processing global listeners for the application jsf001: java.lang.NoClassDefFoundError: javax/servlet/ServletRequestListener
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+	at com.ibm.ws.classloading.internal.AppClassLoader.definePackageAndClass(AppClassLoader.java:429)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:708)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:580)
+	at com.ibm.ws.classloading.internal.LibertyLoader.loadClassNoException(LibertyLoader.java:39)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:151)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.findClass(ThreadContextClassLoader.java:145)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:141)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:87)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:106)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.loadListener(WebApp.java:815)
+	at com.ibm.ws.webcontainer.webapp.WebApp.loadLifecycleListeners(WebApp.java:2314)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1058)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6706)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:474)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:469)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1190)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:113)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:987)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:247)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.ServletRequestListener
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:736)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:321)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:708)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:580)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:547)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 28 more
+
+[3/5/23, 20:11:23:912 WEST] 0000003c com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/ibtissam/Documents/trello/target/liberty/wlp/usr/servers/jsf001Server/logs/state/plugin-cfg.xml.
+[3/5/23, 20:11:24:096 WEST] 00000029 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.NoClassDefFoundError: javax/servlet/ServletRequestListener com.ibm.ws.webcontainer.osgi.DynamicVirtualHost startWebApp" at ffdc_23.03.05_20.11.23.0.log
+[3/5/23, 20:11:24:266 WEST] 00000029 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.NullPointerException com.ibm.ws.webcontainer.webapp.WebApp.notifyServletContextDestroyed 1405" at ffdc_23.03.05_20.11.24.0.log
+[3/5/23, 20:11:24:267 WEST] 00000029 com.ibm.ws.webcontainer.webapp                               E SRVE0285E: Exception caught while destroying context: java.lang.NullPointerException
+	at org.jboss.weld.module.web.servlet.WeldInitialListener.contextDestroyed(WeldInitialListener.java:113)
+	at com.ibm.ws.webcontainer.webapp.WebApp.notifyServletContextDestroyed(WebApp.java:2700)
+	at com.ibm.ws.webcontainer.webapp.WebApp.destroy(WebApp.java:4037)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.destroy(WebApp.java:1471)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.stopWebApp(DynamicVirtualHost.java:506)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:484)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:469)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1190)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:113)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:987)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:247)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[3/5/23, 20:11:24:272 WEST] 00000029 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0012I: The application jsf001 was not started.
+[3/5/23, 20:11:24:273 WEST] 00000029 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/jsf001/
+[3/5/23, 20:11:24:310 WEST] 00000026 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 9080.
+[3/5/23, 20:11:24:357 WEST] 00000026 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [cdi-3.0, expressionLanguage-4.0, faces-3.0, jdbc-4.2, pages-3.0, servlet-5.0].
+[3/5/23, 20:11:24:358 WEST] 00000026 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 5.380 seconds.
+[3/5/23, 20:11:24:359 WEST] 00000026 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The jsf001Server server is ready to run a smarter planet. The jsf001Server server started in 6.881 seconds.
+[3/5/23, 20:11:27:017 WEST] 0000002c com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application jsf001.
+[3/5/23, 20:11:27:019 WEST] 0000002c bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The jsf001 application is using the loose application definition at the /home/ibtissam/Documents/trello/target/liberty/wlp/usr/servers/jsf001Server/apps/jsf001.war.xml location.
+[3/5/23, 20:11:27:691 WEST] 0000002c org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[3/5/23, 20:11:27:700 WEST] 0000002c org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.cdi.JsfArtifactProducerExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>, BeanManager) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[3/5/23, 20:11:27:821 WEST] 0000002c com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Hello Servlet.
+[3/5/23, 20:11:27:821 WEST] 0000002c com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Hello Servlet has been bound to default_host.
+[3/5/23, 20:11:27:821 WEST] 0000002c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/jsf001/
+[3/5/23, 20:11:27:823 WEST] 0000002b com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/jsf001
+[3/5/23, 20:11:27:824 WEST] 0000002b com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[3/5/23, 20:11:27:862 WEST] 0000002b org.apache.myfaces.ee.MyFacesContainerInitializer            I Using org.apache.myfaces.ee.MyFacesContainerInitializer
+[3/5/23, 20:11:27:863 WEST] 0000002b org.apache.myfaces.ee.MyFacesContainerInitializer            I Added FacesServlet with mappings=[/faces/*, *.jsf, *.faces, *.xhtml]
+[3/5/23, 20:11:27:867 WEST] 0000002b com.ibm.ws.jsf.ee.WASMyFacesContainerInitializer             I Added StartupServletContextListener to the servlet context
+[3/5/23, 20:11:27:879 WEST] 0000002b com.ibm.ws.webcontainer.webapp                               E SRVE0279E: Error occured while processing global listeners for the application jsf001: java.lang.NoClassDefFoundError: javax/servlet/ServletRequestListener
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1017)
+	at com.ibm.ws.classloading.internal.AppClassLoader.definePackageAndClass(AppClassLoader.java:429)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:327)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:708)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:580)
+	at com.ibm.ws.classloading.internal.LibertyLoader.loadClassNoException(LibertyLoader.java:39)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:151)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.findClass(ThreadContextClassLoader.java:145)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:141)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:87)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:106)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.loadListener(WebApp.java:815)
+	at com.ibm.ws.webcontainer.webapp.WebApp.loadLifecycleListeners(WebApp.java:2314)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1058)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6706)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:474)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:469)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1190)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:113)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:987)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:247)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.ServletRequestListener
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:736)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:321)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:708)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:580)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:547)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 28 more
+
+[3/5/23, 20:11:27:887 WEST] 0000002b com.ibm.ws.webcontainer.webapp                               E SRVE0285E: Exception caught while destroying context: java.lang.NullPointerException
+	at org.jboss.weld.module.web.servlet.WeldInitialListener.contextDestroyed(WeldInitialListener.java:113)
+	at com.ibm.ws.webcontainer.webapp.WebApp.notifyServletContextDestroyed(WebApp.java:2700)
+	at com.ibm.ws.webcontainer.webapp.WebApp.destroy(WebApp.java:4037)
+	at com.ibm.ws.webcontainer.osgi.webapp.WebApp.destroy(WebApp.java:1471)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.stopWebApp(DynamicVirtualHost.java:506)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:484)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApplication(DynamicVirtualHost.java:469)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.startWebApplication(WebContainer.java:1190)
+	at com.ibm.ws.webcontainer.osgi.WebContainer.access$100(WebContainer.java:113)
+	at com.ibm.ws.webcontainer.osgi.WebContainer$3.run(WebContainer.java:987)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:247)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[3/5/23, 20:11:27:895 WEST] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0020I: Application jsf001 not updated.
+[3/5/23, 20:11:27:897 WEST] 0000002b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/jsf001/
+[3/5/23, 20:15:39:200 WEST] 00000015 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: The server jsf001Server is stopping because the JVM is exiting.
+[3/5/23, 20:15:39:205 WEST] 0000004d com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[3/5/23, 20:15:39:215 WEST] 00000034 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host localhost  (IPv4: 127.0.0.1) port 9080.
+[3/5/23, 20:15:39:366 WEST] 00000016 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Server shutdown requested on Sunday, March 5, 2023 at 8:15 PM. The server jsf001Server is shutting down.
+[3/5/23, 20:15:40:218 WEST] 0000004d com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[3/5/23, 20:15:40:709 WEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server jsf001Server stopped after 4 minutes, 23.231 seconds.

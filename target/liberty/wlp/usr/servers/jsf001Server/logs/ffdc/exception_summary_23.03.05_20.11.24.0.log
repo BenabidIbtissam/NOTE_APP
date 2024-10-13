@@ -1,0 +1,8 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      2   3/5/23, 20:11:23:876 WEST   3/5/23, 20:11:27:886 WEST java.lang.NoClassDefFoundError com.ibm.ws.webcontainer.osgi.DynamicVirtualHost startWebApp
+                                                                            - /home/ibtissam/Documents/trello/target/liberty/wlp/usr/servers/jsf001Server/logs/ffdc/ffdc_23.03.05_20.11.23.0.log
+     1      2   3/5/23, 20:11:24:107 WEST   3/5/23, 20:11:27:887 WEST java.lang.NullPointerException com.ibm.ws.webcontainer.webapp.WebApp.notifyServletContextDestroyed 1405
+                                                                            - /home/ibtissam/Documents/trello/target/liberty/wlp/usr/servers/jsf001Server/logs/ffdc/ffdc_23.03.05_20.11.24.0.log
+------+------+---------------------------+---------------------------+---------------------------

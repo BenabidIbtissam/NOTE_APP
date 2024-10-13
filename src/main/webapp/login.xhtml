@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+
+     >
+
+
+      <h:form id="form_login"> 
+    
+        <h:panelGrid columns="2">
+        	<h:outputText value="Email"/>
+        	<h:inputText id="id_login" value="#{login.email}"
+                required="true">
+                <f:validateLength minimum="10"/>
+            </h:inputText>
+      	<h:outputText value="Password"/> 
+      	<h:inputSecret value="#{login.passwd}"
+          required="true"
+        />
+      	<h:commandButton id="id_check" value="Login" action="#{myUserServices.check()}"/> 
+          <h:link value="Sign Up" outcome="signup.xhtml" />
+          <h:link value="home" outcome="home.xhtml" />
+
+        </h:panelGrid>
+    <br/>
+    <h:message for="id_login" style="color:red;"/>
+    </h:form> 
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

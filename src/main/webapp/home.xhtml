@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <p:layout fullPage="true">
+        <p:layoutUnit position="north">
+            <h:panelGroup styleClass="navbar">
+                <h:graphicImage value="/resources/images/logo.png" />
+                <h:panelGroup styleClass="navbar-buttons">
+                    <h:commandButton value="Sign Up" />
+                    <h:commandButton value="Log In" />
+                </h:panelGroup>
+            </h:panelGroup>
+        </p:layoutUnit>
+        <p:layoutUnit position="center">
+            <div class="columns">
+                <div class="column">
+                    <img src="/resources/images/home.png" />
+                </div>
+                <div class="column">
+                    <h2>Text Description</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis elementum arcu. Fusce vel magna euismod, dapibus libero et, volutpat risus. Morbi vel dolor dui. Sed euismod velit a massa tempus vestibulum. Sed facilisis sapien id est interdum, id hendrerit ipsum bibendum.</p>
+                    <h:commandButton value="Find More" />
+                </div>
+            </div>
+        </p:layoutUnit>
+        <p:layoutUnit position="south">
+            <div class="footer">
+                <p>Copyright © 2023 My Website</p>
+            </div>
+        </p:layoutUnit>
+    </p:layout>
+</body>
+</html>

@@ -1,0 +1,10 @@
+/home/ibtissam/Documents/trello/src/main/java/estm/dsic/jee/models/Employee.java
+/home/ibtissam/Documents/trello/src/main/java/estm/dsic/jee/services/UserServices.java
+/home/ibtissam/Documents/trello/src/main/java/estm/dsic/jee/models/Task.java
+/home/ibtissam/Documents/trello/src/main/java/estm/dsic/jee/models/State.java
+/home/ibtissam/Documents/trello/src/main/java/estm/dsic/jee/dal/UserDao.java
+/home/ibtissam/Documents/trello/src/main/java/estm/dsic/jee/controllers/Logout.java
+/home/ibtissam/Documents/trello/src/main/java/estm/dsic/jee/models/Project.java
+/home/ibtissam/Documents/trello/src/main/java/estm/dsic/jee/controllers/SignUp.java
+/home/ibtissam/Documents/trello/src/main/java/estm/dsic/jee/controllers/Login.java
+/home/ibtissam/Documents/trello/src/main/java/estm/dsic/jee/controllers/FacesApp.java
